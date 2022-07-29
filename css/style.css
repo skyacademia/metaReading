@@ -1,0 +1,294 @@
+/*
+기본사항
+font-size : 16px
+*/
+:root{
+  --basic-font-size : 16px;
+}
+* {
+  font-family: "나눔스퀘어";
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.top_manu {
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 1.0);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  height: 100%;
+}
+
+.top_container {
+  width: 100%;
+  height: 50rem;
+  background-image: url("../images/img/book1.jpg");
+  background-size: 100% 100%;
+  /* filter: brightness(50%); */
+  /* background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); */
+  display: flex;
+  justify-content: center;
+}
+
+.main_slogan {
+  display: flex;
+  align-items: center;
+  width: 1280px;
+  height: 100%;
+  color: white;
+  /* font-size: calc(1.5rem + 1vw); */
+  font-size: 2.2rem;
+}
+
+.main_content_area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px;
+  border-bottom: 0.5px solid gray;
+  margin-bottom: 3vh;
+}
+
+.main_contents h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.main_contents {
+  width: 1280px;
+  margin: 50px auto;
+}
+
+.main_contents_images {
+  width: 100%;
+  height: 100%;
+}
+
+.main_contents_text_right {
+  padding-left: 2em;
+  margin: auto;
+}
+
+.main_contents_text_left {
+  margin: auto;
+}
+
+.main_contents_text_right p {
+  font-size: 1em;
+}
+
+.main_contents_text_left p {
+  font-size: 1em;
+  margin-right: 1em;
+}
+
+.main_contents img {
+  width: 100%;
+  margin: auto 0;
+}
+
+.main_contents_9 {
+  text-align: center;
+}
+
+.main_contents_10 {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 10% 0;
+}
+
+.polygon1 {
+  width: 15rem;
+  height: 15rem;
+  background-color: #f4f2f3;
+  border-radius: 30px;
+}
+
+footer {
+  background-color: #2d2d2d;
+  color: white;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:1799px) {
+  .top_container {
+    height: 35rem;
+  }
+
+  .main_slogan {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width:1279px) {
+  .top_manu {
+    height: 3.5rem;
+  }
+
+  .top_container {
+    height: 24rem;
+  }
+
+  .main_slogan {
+    width: 900px;
+    font-size: 1.5rem;
+  }
+
+  .main_contents {
+    width: 900px;
+    margin: 35px auto;
+  }
+
+  .main_content_area {
+    grid-template-rows: 280px;
+    border-bottom: 0.35px solid gray;
+    margin-bottom: 2.1vh;
+  }
+
+  .main_contents h2 {
+    font-size: 2.1rem;
+    margin: 0;
+  }
+
+}
+
+
+@media (max-width:899px) {
+  .top_manu {
+    height: 2.45rem;
+  }
+
+  .top_container {
+    height: 16.8rem;
+  }
+
+  .main_slogan {
+    width: 600px;
+    font-size: 1.05rem;
+  }
+
+  .main_contents {
+    width: 600px;
+    margin: 24.5px auto;
+  }
+
+  .main_content_area {
+    grid-template-rows: 196px;
+    border-bottom: 0.35px solid gray;
+    margin-bottom: 2.1vh;
+  }
+
+  .main_contents h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .main_contents_text_right p {
+    font-size: 0.7em;
+  }
+
+  .main_contents_text_left p {
+    font-size: 0.7em;
+    margin-right: 0.7em;
+  }
+}
+
+
+
+@media(max-width:599px) {
+  .top_manu {
+    height: 1.7rem;
+  }
+
+  .top_container {
+    height: 11.8rem;
+  }
+
+  .main_slogan {
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.05rem;
+  }
+
+  .main_contents {
+    width: 100%;
+    margin: 17.2px auto;
+  }
+
+  .main_content_area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: none;
+    margin-bottom: 1.05vh;
+
+  }
+
+  .main_contents h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .main_contents_images {
+    order: 2;
+    width: 70%;
+  }
+
+  .main_contents_text_right {
+    padding-left: 0;
+    margin: auto;
+    order: 1;
+    text-align: center;
+    width: 70%;
+  }
+
+  .main_contents_text_left {
+    order: 1;
+    text-align: center;
+    width: 70%;
+  }
+
+  .main_contents_text_right p {
+    font-size: 0.7em;
+  }
+
+  .main_contents_text_left p {
+    font-size: 0.7em;
+    margin-right: 0.7em;
+  }
+
+  .main_contents_10 {
+    margin: 0;
+    margin-top: 3.5%;
+    justify-content: space-evenly;
+  }
+
+  .polygon1 {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  footer {
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+  }
+}
