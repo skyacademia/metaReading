@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-	<!--
+  <!--
 	개발 완료되면 넣어야하는 meta tag
 	date
 	email
@@ -10,127 +10,108 @@
 	Last-Modified(최종수정일)
 	og(오픈그래프) 내용
 	-->
-	<meta charset="utf-8">
-	<meta name="Content-Script-Type" content="text/html">
-	<meta name="X-UA-Compatible" content="IE-edge">
-	<meta name="robots" content="Non">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="Content-Script-Type" content="text/html">
+  <meta name="X-UA-Compatible" content="IE-edge">
+  <meta name="robots" content="Non">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta name="Description" content="안녕하세요. 누구나 빠르게 읽게 해주는 5배속 메타독서 소개 사이트입니다.">
-	<meta name="keywords" content="5배속 메타독서,메타독서, 독서법">
-	<meta name="Author" content="메타독서">
-	<!--페이지 작성 제작자명-->
-	<meta name="publisher" content="에듀보고">
-	<!--제작사-->
-	<meta name="Other Agent" content="donghoon bae">
-	<!--웹 책임자-->
-	<meta name="Distribution" content="에듀보고">
-	<!--배포자-->
-	<meta name="Generator" content="Visual Studio Code">
-	<meta name="Email" content="rnfhska95@naver.com">
-	<meta name="Copyright" content="에듀보고">
+  <meta name="Description" content="안녕하세요. 누구나 빠르게 읽게 해주는 5배속 메타독서 소개 사이트입니다.">
+  <meta name="keywords" content="5배속 메타독서,메타독서, 독서법">
+  <meta name="Author" content="메타독서">
+  <!--페이지 작성 제작자명-->
+  <meta name="publisher" content="에듀보고">
+  <!--제작사-->
+  <meta name="Other Agent" content="donghoon bae">
+  <!--웹 책임자-->
+  <meta name="Distribution" content="에듀보고">
+  <!--배포자-->
+  <meta name="Generator" content="Visual Studio Code">
+  <meta name="Email" content="rnfhska95@naver.com">
+  <meta name="Copyright" content="에듀보고">
 
 
-	<link rel="icon" type="image/x-icon" href="images/book_icon.png">
-	<link rel="stylesheet" href="./css/style.css">
-	<title>메타독서</title>
+  <link rel="icon" type="image/x-icon" href="images/icon.jpeg">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <title>메타독서</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
+  <!-- Custom styles for this template -->
 </head>
 
 <body>
-	<header>
-		<div class="top_manu">
-			<nav class="wrapper">
-				<image src="./images/logo.svg" id="logo"></image>
-			</nav>
-		</div>
-		<div class="top_container">
-			<div class="img_effect"></div>
-			<div class="main_slogan">
-				<h1>독서를 뛰어넘는 독서를 하다<br>5배속 메타독서</h1>
-			</div>
-		</div>
-	</header>
+
+  <main>
+    <div class="px-4 py-5 my-5 text-center contenet">
+      <img class="d-block mx-auto mb-4 img-fluid" id="prepareImage" src="images/preparing.svg" alt="preparing website">
+      <h1 class="display-5 fw-bold">홈페이지 준비 중입니다</h1>
+      <div>
+        <p class="lead">빠른 시일 내에 선보이도록 하겠습니다</p>
+      </div>
+    </div>
+  </main>
 
 
-	<main class="main_contents">
-		<article class="information_area">
-			<div class="information_title">
-				<h2>책도 빠르게 읽고 이해해야하는 현대 사회, 5배속 메타독서로 해결하세요</h2>
-			</div>
-		</article>
-		<article class="color_area">
-			<div class="main_content_area">
-				<div class="main_contents_images">
-					<img src="./images/img/reading5.jpg" alt="3d modeling in program">
-				</div>
-				<div class="main_contents_text_right">
-					<h2>숙련된 독서가로 만드는 독서</h2>
-					<!-- <h2>차별화된 수업과 훈련을<br>가지고 교육합니다</h2> -->
-					<p>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 
-					</p>
-				</div>
-			</div>
-		</article>
 
-		<article class="color_area">
-			<div class="main_content_area">
-				<div class="main_contents_text_left">
-					<h2>독서능력을 회복시켜주는 독서</h2>
-					<!-- <h2>더 빨리 읽고<br>더 많이 기억할 수 있습니다</h2> -->
-					<p>
-
-					</p>
-				</div>
-				<div class="main_contents_images"><img src="./images/img/reading3_capture.jpg"
-						alt="3d animation in program"></div>
-			</div>
-		</article>
-
-		<article class="color_area">
-			<div class="main_content_area">
-				<div class="main_contents_images"><img src="./images/img/people1.jpg" alt="drawing picture in program">
-				</div>
-				<div class="main_contents_text_right">
-					<h2>써먹을 수 있는 독서</h2>
-					<p>
-
-					</p>
-				</div>
-			</div>
-		</article>
-
-		<article class="color_area" style="display: none;">
-			<div class="main_content_area">
-				<div class="main_contents_text_left">
-					<h2>삶을 바꿔주는 독서</h2>
-					<p>
-						5배속 독서는 1일 1독이 가능합니다.<br>
-					</p>
-				</div>
-				<div class="main_contents_images"><img src="./images/img/reading4.jpg" alt="2d animation in program">
-				</div>
-			</div>
-		</article>
-
-		<article class="information_area">
-			<div class="information_title">
-				<h2>완독의 기쁨을 누린 수료생들을 확인해보세요</h2>
-			</div>
-			<div class="information_content">
-				<div class="polygon1">
-				</div>
-				<div class="polygon1">
-				</div>
-				<div class="polygon1">
-				</div>
-			</div>
-		</article>
-
-	</main>
 </body>
-<footer>
-	<p>© 2022 metaReading</p>
-</footer>
 
 </html>
